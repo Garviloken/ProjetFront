@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Cv Jeu</title>
+  </head>
+  <body>
+   
+    <div class="bg">
+      <header>
+        <h1>Olivier Machelart</h1>
+        <h2>Developpeur Full Stack JS</h2>
+        <div class="flex">
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li>
+              <a href="./media/Copie de Olivier.pdf" target="_blank">CV</a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/olivier-machelart"
+                target="_blank"
+                >Linkedin</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <div class="big">
+          <div id="gauche" style="display: none">
+            <h3>Formations</h3>
+            <p>
+              Développeur Full Stack JS - IFOCOP paris 13 2023 -2024
+              <br />
+              titre RNCP niveau 6 (bac+3/4).
+              <br />
+              JavaScript, Angular, NodeJS, TypeScript, MongoDB.
+            </p>
+
+            <p>
+              Concepteur réalisateur chef de projet multimédia IESA 2009 - 2010
+              <br />
+              Formation 3e cycle niveau (bac+4)
+              <br />
+              Html/css, ActionScript3, PHP.
+            </p>
+            <p>BAC STI génie électrotechnique lycée Léonard De Vinci 2002</p>
+          </div>
+          <div id="gauche1"><p>Locked!!</p></div>
+          <div class="game">
+            <div id="compteARebours"></div>
+            <canvas id="canvas" style="display: none"></canvas>
+            <div id="start" style="display: block">
+              <p>
+                Q = Gauche
+                <br />
+                D = Droite
+              </p>
+              <p>Survive</p>
+              <p><a href="#">Start the Game</a></p>
+            </div>
+            <div id="gameover" style="display: none">
+              <p>GAME OVER</p>
+              <p><a href="#">Try again ?</a></p>
+            </div>
+            <div id="win" style="display: none">
+              <p>YOU WON</p>
+              <!-- <p><a href="#">Play again ?</a></p> -->
+            </div>
+
+            <audio
+              src="/media/sound/Gley-lancer-stage01.mp3"
+              id="theme-song"
+            ></audio>
+          </div>
+          <div id="droite" style="display: none">
+            <h3>Expériences</h3>
+            <p>
+              Premier Barman au Domaine des Vanneaux Hôtel 4★ Mgallery. Depuis
+              2019.
+              <br />
+              Assistant Chef barman, ouverture d’établissement, création de
+              cartes, mixologie, création de planning, suivi de commandes, des
+              stocks
+            </p>
+            <p>
+              Assistant chef barman au Flora Danica (Paris 8e) Avril 2017 – Juin
+              2019.
+              <br />
+              Mixologie, création de planning, suivi de commandes, des stocks
+            </p>
+            <p>
+              Intégrateur html/css en stage chez Le Hub / Artishoc Avril –
+              Octobre 2010.
+              <br />
+            </p>
+            <p>
+              Mise a jour et intégration de contenu des sites administrés par le
+              collectif Atishoc. Refonte graphique de site, emailing:
+              intégration et envoie de newsletter
+            </p>
+          </div>
+          <div id="droite1"><p>Locked!!</p></div>
+        </div>
+      </main>
+      <footer>mention légale</footer>
+    </div>
+    <script src="./mon-script.js"></script>
+  </body>
+</html>
